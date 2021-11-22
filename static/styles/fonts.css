@@ -1,0 +1,67 @@
+/* Gilroy */
+
+@font-face {
+	font-family: 'Gilroy';
+      font-weight: 500;
+      src:  url('/fonts/gilroy/gilroy-medium/gilroy-medium.woff2') format('woff2'), /* Super Modern Browsers */
+		url('/fonts/gilroy/gilroy-medium/gilroy-medium.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('/fonts/gilroy/gilroy-medium/gilroy-medium.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+      font-family: "Gilroy";
+      font-weight: 600;
+      src:  url('/fonts/gilroy/gilroy-semibold/gilroy-semibold.woff2') format('woff2'), /* Super Modern Browsers */
+            url('/fonts/gilroy/gilroy-semibold/gilroy-semibold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+            url('/fonts/gilroy/gilroy-semibold/gilroy-semibold.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+      font-family: "Gilroy";
+      font-weight: 700;
+      src:  url('/fonts/gilroy/gilroy-bold/gilroy-bold.woff2') format('woff2'), /* Super Modern Browsers */
+            url('/fonts/gilroy/gilroy-bold/gilroy-bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+            url('/fonts/gilroy/gilroy-bold/gilroy-bold.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+
+
+/* Inter */
+
+@font-face {
+      font-family: "Inter";
+      font-weight: 400;
+      src:  url('/fonts/inter/inter-regular/inter-regular.woff2') format('woff2'), /* Super Modern Browsers */
+            url('/fonts/inter/inter-regular/inter-regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+            url('/fonts/inter/inter-regular/inter-regular.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+      font-family: "Inter";
+      font-weight: 500;
+      src:  url('/fonts/inter/inter-medium/inter-medium.woff2') format('woff2'), /* Super Modern Browsers */
+            url('/fonts/inter/inter-medium/inter-medium.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+            url('/fonts/inter/inter-medium/inter-medium.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+      font-family: "Inter";
+      font-weight: 600;
+      src:  url('/fonts/inter/inter-semibold/inter-semibold.woff2') format('woff2'), /* Super Modern Browsers */
+            url('/fonts/inter/inter-semibold/inter-semibold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+            url('/fonts/inter/inter-semibold/inter-semibold.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+      font-family: "Inter";
+      font-weight: 800;
+      src:  url('/fonts/inter/inter-extrabold/inter-extrabold.woff2') format('woff2'), /* Super Modern Browsers */
+            url('/fonts/inter/inter-extrabold/inter-extrabold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+            url('/fonts/inter/inter-extrabold/inter-extrabold.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+
+/* Roboto */
+
+@font-face {
+      font-family: "Roboto";
+      font-weight: 400;
+      src:  url('/fonts/roboto/roboto-regular/roboto-regular.woff2') format('woff2'), /* Super Modern Browsers */
+            url('/fonts/roboto/roboto-regular/roboto-regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+            url('/fonts/roboto/roboto-regular/roboto-regular.ttf') format('truetype'); /* Safari, Android, iOS */
+}

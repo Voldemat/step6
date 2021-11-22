@@ -1,0 +1,59 @@
+
+
+
+*{
+      margin:0;
+      padding:0;
+      font-size:18px;
+      font-family: "Gilroy";
+      font-weight: 500;
+      box-sizing: border-box;
+      outline: none;
+      color:var(--black);
+	-webkit-text-size-adjust: 100%;
+      line-height: 21px;
+}
+h1, h2, h3, h4, h5{
+	font-size: initial;
+	font-weight: initial;
+}
+:root{
+      --green:#49AD09;
+      --black:#313131;
+}
+body.active{
+      width:100vw;
+      height:100vh;
+      overflow: hidden;
+}
+
+.container{
+      max-width:1440px;
+      margin:0 auto;
+      padding:0 134px;
+}
+
+
+@media screen and (max-width:1200px){
+      .container{
+            padding:0 100px;
+      }
+}
+
+
+
+
+@media screen and (max-width:1200px){
+      .container{
+            padding:0 60px;
+      }
+}
+
+
+
+
+@media screen and (max-width: 767px){
+      .container{
+          padding:0 20px;
+      }
+  }
