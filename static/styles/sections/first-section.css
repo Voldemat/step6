@@ -1,0 +1,108 @@
+.first-section__container{
+      position: relative;
+      width:100%;
+}
+
+.first-section__content-wrapper{
+      position: absolute;
+      left:0;
+      top:0;
+      width:100%;
+      padding:50px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+.first-section__content-container{
+      position: relative;
+      width:100%;
+      height:100%;
+      max-width:500px;
+      margin:0 auto;
+}
+.first-section__back-wrapper{
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width:100vw;
+      max-width:1600px;
+      right:50%;
+      left:50%;
+      margin-left: -50vw;
+      margin-right:-50vw;
+      padding:clamp(50px, 10vw, 100px) 0;
+
+      /* Hide on Mobiles */
+      display: none;
+}
+.first-section__image{
+      height:auto;
+      max-width:22%;
+      object-fit: cover;
+}
+/* .first-section__image-1{display: none;} */
+
+.first-section__title,
+.first-section__title-green{
+      font-weight: 800;
+      font-size: clamp(2rem, 6vw, 4.875rem);
+      line-height: clamp(2rem, 6vw, 5rem);
+      text-align: center;
+      letter-spacing: -0.05em;
+}  
+.first-section__title-green{
+      color:var(--green);
+}
+.first-section__text{
+      padding:0 20px;
+      margin-top:clamp(20px, 3.5vw, 36px);
+      font-size:clamp(0.6rem, 1.5vw, 1.125rem);
+      line-height:clamp(0.7rem, 1.7vw, 1.625rem);
+      text-align: center;
+}
+.first-section__buttons-wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-top:clamp(25px, 4.5vw, 63px);
+}
+.green-button{
+      background-color: var(--green);
+      border:none;
+      color:#fff;
+      padding:clamp(10px, 1.4vw, 18px) clamp(30px, 6.5vw, 60px);
+      border-radius: 5px;
+      text-align: center;
+      /* white-space: nowrap; */
+      font-size:clamp(0.6rem, 1.5vw, 1rem);
+}
+.first-section__button{
+      margin:5px 20px;
+}
+.first-section__link{
+      margin:5px 20px;
+      text-transform: capitalize;
+      font-size:clamp(0.6rem, 1.5vw, 1rem);
+}
+.first-section__icon{
+      margin-left:13px;
+      font-size:0.8em;
+}
+@media screen and (min-width:1600px){
+      .first-section__back-wrapper{
+            margin:0 -800px;
+      }
+}
+
+@media screen and (min-width:767px){
+      .first-section__back-wrapper{display: flex;}
+      .first-section__content-wrapper{
+            padding:100px 30%;
+      }
+      .first-section__content-container{
+            max-width: unset;
+      }
+}

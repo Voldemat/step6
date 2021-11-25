@@ -65,3 +65,12 @@
             url('/fonts/roboto/roboto-regular/roboto-regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
             url('/fonts/roboto/roboto-regular/roboto-regular.ttf') format('truetype'); /* Safari, Android, iOS */
 }
+
+
+/* Font Awesome */
+@font-face{
+      font-family: "FontAwesome";
+      src:  url('/fonts/font-awesome/fontawesome.woff2') format("woff2"),
+            url('/fonts/font-awesome/fontawesome.woff') format("woff"),
+            url('/fonts/font-awesome/fontawesome.ttf') format("truetype");
+}

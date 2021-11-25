@@ -1,3 +1,6 @@
+.header{
+      background-color: #F2F2F2;
+}
 .header__wrapper{
       display: flex;
       justify-content: space-between;
@@ -23,6 +26,7 @@
       box-shadow: 0px 10px 16px 2px rgba(34, 60, 80, 0.2);
       
       
+      z-index:100;
       
       border-bottom:2px solid var(--green);
       border-top:2px solid  var(--green);
@@ -70,10 +74,23 @@
       border-radius: 5px;
       padding:18px 45px;
       color:#fff;
+      box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px #31313106,
+
+                  0px 8.148148536682129px 6.518518447875977px 0px #3131310A,
+
+                  0px 20px 13px 0px #3131310D,
+
+                  0px 38.51852035522461px 25.481481552124023px 0px #3131310F,
+
+                  0px 64.81481170654297px 46.85185241699219px 0px #31313113,
+
+                  0px 100px 80px 0px #3131311A;
+
 }
 .header__burger{
       width:25px;
       height:20px;
+      z-index: 100;
 }
 .burger{
       --line-size:10%;

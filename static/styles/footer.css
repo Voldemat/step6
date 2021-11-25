@@ -1,0 +1,129 @@
+.footer__wrapper {
+	display: flex;
+	flex-direction: column;
+}
+.footer__nav {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	margin-top: 50px;
+}
+.footer__license {
+	padding: clamp(20px, 4vw, 40px);
+	width: 100%;
+}
+.footer__text {
+	text-align: center;
+	font-size: 1rem;
+}
+.footer__text-left {
+	text-align: left;
+}
+.footer__text-right {
+	text-align: right;
+}
+.navbar__item {
+	list-style: none;
+	text-align: left;
+}
+.footer__logo {
+	font-size: 1.5rem;
+	margin-bottom: 35px;
+	font-weight: 700;
+}
+.footer__social {
+	margin-top: clamp(40px, 10vw, 64px);
+}
+.social-media {
+	display: flex;
+	justify-content: space-around;
+}
+.social-media__item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.9rem;
+	padding: 0.6rem;
+	min-width: 36px;
+	aspect-ratio: 1/1;
+	background-color: #f2f2f2;
+	border-radius: 5px;
+}
+.social-media__item + .social-media__item {
+	margin-left: 15px;
+}
+
+.footer__col {
+	max-width: 300px;
+	padding-bottom: clamp(2.5rem, 7vw, 60px);
+}
+.footer__col-mw{max-width: 200px;min-width:300px;width:100%;}
+.navbar__link {
+	font-weight: 500;
+	text-decoration: none;
+}
+.footer__col:nth-child(2n) {
+	text-align: right;
+      align-self: flex-end;
+}
+.navbar__title {
+	font-weight: 600;
+	font-size: 1.25rem;
+	line-height: 1.465rem;
+	margin-bottom: 2.5rem;
+	text-align: left;
+}
+.navbar__item + .navbar__item {
+	margin-top: clamp(18px, 5vw, 28px);
+}
+
+
+.footer__form{
+      position: relative;
+      background-color: #F2F2F2;
+      width:100%;
+	max-width: 80%;
+      padding:12px;
+      display: flex;
+      justify-content: space-between;
+      align-items:center;
+}
+.footer__input{
+      width:90%;
+      background-color: transparent;
+      border:none;
+}
+
+@media screen and (min-width: 400px) {
+	.footer__social {
+		justify-content: flex-start;
+	}
+	.footer__col:nth-child(2n),
+	.footer__col {
+		text-align: center;
+            padding-right:20px;
+		padding-left: 20px;
+	}
+	.footer__form{
+		max-width:unset;
+	}
+	.footer__nav {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+}
+
+@media screen and (min-width:1200px){
+	.footer__wrapper{
+		flex-direction: row;
+	}
+	.footer__nav{
+		justify-content: space-between;
+		margin-top: 0;
+	}
+	.footer__col{
+		padding-left:40px;
+		padding-right:40px;
+	}
+}
