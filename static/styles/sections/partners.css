@@ -1,0 +1,18 @@
+.partners{
+      text-align: center;
+      overflow: hidden;
+      margin:100px 0 200px 0;
+}
+.partners__wrapper{
+      
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      /* padding:0 150px;      */
+}
+.partners__item{
+      padding:20px clamp(15px, 2vw, 30px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
