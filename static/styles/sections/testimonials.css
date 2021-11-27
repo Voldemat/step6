@@ -1,0 +1,117 @@
+
+.testimonials{
+      overflow-x: hidden;
+}
+.tst-content{
+      position: relative;
+}
+.tst-content__slider{
+      position: absolute;
+      left:0;
+      top:0;
+      width:100%;
+      height: 100%;
+}
+.tst-content__box{
+      background-color: #F2F2F2;
+      width:80%;
+      height:540px;
+      margin: auto;
+      z-index:-1;
+
+}
+.tst-slider .swiper-slide-prev,
+.tst-slider .swiper-slide-next,
+.tst-slider .swiper-slide-active{
+      opacity: 1;
+}
+.tst-slider__card{
+      border-radius: 5px;
+      background: #fff;
+      box-shadow: 0px 100px 80px rgba(49, 49, 49, 0.1);
+      max-height:282px;
+      max-width:400px;
+      opacity:0;
+      transition: 0.5s ease opacity, 0.5s ease transform !important;
+
+      font-family: "Inter";
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding:40px 32px;
+      margin-top:auto;
+      margin-bottom:auto;
+}
+.tst-slider__card *{
+      font-family: inherit;
+}
+.tst-slider__navigation-wrapper{
+      position: absolute;
+      bottom:0;
+      left:0;
+      width:100%;
+      height:100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+}
+.tst-slider__navigation{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width:6.666rem;
+      height:3.666rem;
+      border-radius: 70px;
+      background-color: #fff;
+      margin-bottom: 30px;
+}
+.tst-slider__button{
+      position: relative;
+      width:50px;
+      height:50px;
+      z-index:10000;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     
+
+}
+.tst-slider__button.swiper-button-disabled i{
+      opacity: 0.5;
+}
+.tst-slider__button i{
+      font-size:1.5rem;
+      margin: auto;
+      color:inherit;
+      transition: opacity 0.5s ease;
+}
+.tst-slider__button-prev{
+      color:#000;
+}
+.tst-slider__button-next{
+      background-color: #000;
+      color:#fff;
+}
+.tst-slider__company{
+      font-weight: 600;
+      font-size:0.77rem;
+      line-height: 0.95rem;
+      color:#32435C;
+}
+.tst-slider__text{
+      font-family:400;
+      font-size:0.888rem;
+      line-height:1.666rem;
+      letter-spacing: -0.01em;
+      color:#6A635B;
+}
+.tst-slider__star{
+      font-size: 0.9rem !important;
+      color:#202020;
+}
+
+.tst-slider__star-active{
+      color:#FBB040;
+
+}

@@ -1,6 +1,7 @@
 .first-section{
 	overflow-x: hidden;
 	background-color: #F2F2F2;
+	margin-top: 0;
 }
 .first-section__container {
 	position: relative;

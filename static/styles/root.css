@@ -20,7 +20,9 @@ body.active{
       height:100vh;
       overflow: hidden;
 }
-
+section{
+      margin:140px 0;
+}
 .container{
       max-width:1440px;
       margin:0 auto;
@@ -28,6 +30,7 @@ body.active{
 }
 .green-button {
       text-decoration: none;
+      text-transform: capitalize;
 	background-color: var(--green);
 	border: none;
 	color: #fff;
@@ -41,6 +44,29 @@ body.active{
 		0px 20px 13px rgba(49, 49, 49, 0.05),
 		0px 8.14815px 6.51852px rgba(49, 49, 49, 0.0392593),
 		0px 1.85185px 3.14815px rgba(49, 49, 49, 0.0240741);
+}
+.section-header__header{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+}
+.section-header__subtitle{
+      line-height: 1.16rem;
+      color:#514040;
+      text-align: center;
+}
+.section-header__title{
+      text-align: center;
+      font-size: 2.5rem;
+      line-height: 2.8rem;
+      margin:30px 0 80px 0;
+      text-transform: capitalize;
+}
+
+.section-footer{
+      margin-top:clamp(40px, 8vw, 80px);
+      text-align: center;
 }
 
 @media screen and (max-width:1200px){

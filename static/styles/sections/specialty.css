@@ -1,20 +1,4 @@
-.specialty__header{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-}
-.specialty__subtitle{
-      line-height: 1.16rem;
-      color:#514040;
-}
-.specialty__title{
-      text-align: center;
-      font-size: 2.5rem;
-      line-height: 2.8rem;
-      margin:30px 0 80px 0;
-      text-transform: capitalize;
-}
+
 .specialty__content{
       display: flex;
       flex-wrap: wrap;
@@ -56,12 +40,10 @@
 
 
 
-.specialty__footer{
-      margin-top:clamp(40px, 8vw, 80px);
-      text-align: center;
-}
+
 .specialty__button{
       padding:16px 80px;
       font-size:1rem;
       line-height: 1.16rem;
+      max-width:225px;
 }

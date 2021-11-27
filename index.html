@@ -2,10 +2,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="styles/fonts.css" />
 		<link rel="stylesheet" href="styles/root.css" />
 		<link rel="stylesheet" href="styles/header.css" />
@@ -13,7 +10,11 @@
 		<link rel="stylesheet" href="styles/sections/first-section.css" />
 		<link rel="stylesheet" href="styles/sections/partners.css" />
 		<link rel="stylesheet" href="styles/sections/specialty.css" />
-		<link rel="stylesheet" href="styles/font-awesome.min.css" />
+		<link rel="stylesheet" href="styles/sections/portfolio.css" />
+		<link rel="stylesheet" href="styles/sections/testimonials.css" />
+		<link rel="stylesheet" href="styles/libs/font-awesome.min.css" />
+		<link rel="stylesheet" href="styles/libs/swiper-bundle.min.css" />
+		<script defer src="scripts/libs/swiper-bundle.min.js"></script>
 		<title>Web.Dev</title>
 	</head>
 	<body>
@@ -23,26 +24,12 @@
 					<div class="header__logo">Web.Dev</div>
 					<nav class="header__menu menu">
 						<div class="menu__wrapper">
-							<a href="#" class="menu__item"
-								>Home</a
-							>
-							<a href="#" class="menu__item"
-								>About</a
-							>
-							<a href="#" class="menu__item"
-								>Testimonials</a
-							>
-							<a href="#" class="menu__item"
-								>Contact</a
-							>
-							<a href="#" class="menu__item"
-								>Sign in</a
-							>
-							<a
-								href="#"
-								class="
-									menu__item menu__item-big
-								"
+							<a href="#" class="menu__item">Home</a>
+							<a href="#" class="menu__item">About</a>
+							<a href="#" class="menu__item">Testimonials</a>
+							<a href="#" class="menu__item">Contact</a>
+							<a href="#" class="menu__item">Sign in</a>
+							<a href="#" class="menu__item menu__item-big"
 								>Sign up</a
 							>
 						</div>
@@ -64,52 +51,32 @@
 								src="images/first-section/background1.png"
 								alt=""
 								class="
-									first-section__image
-									first-section__image-1
+									first-section__image first-section__image-1
 								"
 							/>
 							<img
 								src="images/first-section/background2.png"
 								alt=""
 								class="
-									first-section__image
-									first-section__image-2
+									first-section__image first-section__image-2
 								"
 							/>
 						</div>
 						<div class="first-section__content-wrapper">
-							<div
-								class="
-									first-section__content-container
-								"
-							>
-								<h1
-									class="
-										first-section__title
-									"
-								>
+							<div class="first-section__content-container">
+								<h1 class="first-section__title">
 									We Develop
-									<span
-										class="
-											first-section__title-green
-										"
+									<span class="first-section__title-green"
 										>Shopify</span
 									>
 									sites
 								</h1>
 								<p class="first-section__text">
-									Slingback fabric heels.
-									Thin wraparound ankle
-									strap. Squared heel and
-									toe. Pointed toes. Padded
-									insole with geometrical
-									design.
+									Slingback fabric heels. Thin wraparound
+									ankle strap. Squared heel and toe. Pointed
+									toes. Padded insole with geometrical design.
 								</p>
-								<div
-									class="
-										first-section__buttons-wrapper
-									"
-								>
+								<div class="first-section__buttons-wrapper">
 									<a
 										href="#"
 										class="
@@ -119,17 +86,11 @@
 									>
 										Contact us
 									</a>
-									<a
-										href="#"
-										class="
-											first-section__link
-										"
-									>
+									<a href="#" class="first-section__link">
 										watch video
 										<i
 											class="
-												fa
-												fa-play
+												fa fa-play
 												first-section__icon
 											"
 											aria-hidden="true"
@@ -181,140 +142,560 @@
 				</section>
 				<section class="specialty">
 					<div class="container specialty__container">
-						<div class="specialty__header">
-							<p class="specialty__subtitle">
-								What we Do?
-							</p>
-							<h1 class="specialty__title">
+						<div class="specialty__header section-header">
+							<p class="section-header__subtitle">What we Do?</p>
+							<h1 class="section-header__title">
 								Our Specialization
 							</h1>
 						</div>
 						<div class="specialty__content">
-							<div
-								class="
-									specialty__card
-									sp-card sp-card_shadow
-								"
+							<article
+								class="specialty__card sp-card sp-card_shadow"
 							>
 								<h2 class="sp-card__title">
 									<img
 										src="images/specialty/webflow.png"
 										alt=""
-										class="
-											sp-card__icon
-										"
+										class="sp-card__icon"
 									/>
 									Webflow Development
 								</h2>
 								<p class="sp-card__text">
-									Really boy law county she
-									unable her sister. Feet
-									you off its like like six.
-									Among sex are leave law
-									built now. In built table
-									in an rapid blush. Merits
-									behind on afraid or
+									Really boy law county she unable her sister.
+									Feet you off its like like six. Among sex
+									are leave law built now. In built table in
+									an rapid blush. Merits behind on afraid or
 									warmly.
 								</p>
 								<a
 									href="#"
-									class="
-										sp-card__link
-										sp-card__link_green
-									"
+									class="sp-card__link sp-card__link_green"
 								>
 									Read More
 								</a>
-							</div>
-							<div class="specialty__card sp-card">
+							</article>
+							<article class="specialty__card sp-card">
 								<h2 class="sp-card__title">
 									<img
 										src="images/specialty/shopify.png"
 										alt=""
-										class="
-											sp-card__icon
-										"
+										class="sp-card__icon"
 									/>
 									Shopify Development
 								</h2>
 								<p class="sp-card__text">
-									Really boy law county she
-									unable her sister. Feet
-									you off its like like six.
-									Among sex are leave law
-									built now. In built table
-									in an rapid blush. Merits
-									behind on afraid or
+									Really boy law county she unable her sister.
+									Feet you off its like like six. Among sex
+									are leave law built now. In built table in
+									an rapid blush. Merits behind on afraid or
 									warmly.
 								</p>
-								<a
-									href="#"
-									class="sp-card__link"
-								>
+								<a href="#" class="sp-card__link">
 									Read More
 								</a>
-							</div>
-							<div class="specialty__card sp-card">
+							</article>
+							<article class="specialty__card sp-card">
 								<h2 class="sp-card__title">
 									<img
 										src="images/specialty/figma.png"
 										alt=""
-										class="
-											sp-card__icon
-										"
+										class="sp-card__icon"
 									/>
 									Figma Web Designing
 								</h2>
 								<p class="sp-card__text">
-									Really boy law county she
-									unable her sister. Feet
-									you off its like like six.
-									Among sex are leave law
-									built now. In built table
-									in an rapid blush. Merits
-									behind on afraid or
+									Really boy law county she unable her sister.
+									Feet you off its like like six. Among sex
+									are leave law built now. In built table in
+									an rapid blush. Merits behind on afraid or
 									warmly.
 								</p>
-								<a
-									href="#"
-									class="sp-card__link"
-								>
+								<a href="#" class="sp-card__link">
 									Read More
 								</a>
-							</div>
-							<div class="specialty__card sp-card">
+							</article>
+							<article class="specialty__card sp-card">
 								<h2 class="sp-card__title">
 									<img
 										src="images/specialty/php.png"
 										alt=""
-										class="
-											sp-card__icon
-										"
+										class="sp-card__icon"
 									/>
 									Php Development
 								</h2>
 								<p class="sp-card__text">
-									Really boy law county she
-									unable her sister. Feet
-									you off its like like six.
-									Among sex are leave law
-									built now. In built table
-									in an rapid blush. Merits
-									behind on afraid or
+									Really boy law county she unable her sister.
+									Feet you off its like like six. Among sex
+									are leave law built now. In built table in
+									an rapid blush. Merits behind on afraid or
 									warmly.
 								</p>
-								<a
-									href="#"
-									class="sp-card__link"
-								>
+								<a href="#" class="sp-card__link">
 									Read More
 								</a>
-							</div>
+							</article>
 						</div>
-						<div class="specialty__footer">
+						<div class="section-footer">
 							<a href="#" class="green-button specialty__button">
 								Learn More
 							</a>
+						</div>
+					</div>
+				</section>
+				<section class="portfolio">
+					<div class="container portfolio__container">
+						<div class="section-header">
+							<p class="section-header__subtitle">our work</p>
+							<h1 class="section-header__title">our portfolio</h1>
+						</div>
+						<div class="portfolio__content">
+							<article class="portfolio__item pf-card">
+								<div class="pf-card__image-box">
+									<img
+										src="images/portfolio/item1.jpg "
+										alt=""
+										class="pf-card__image"
+									/>
+								</div>
+								<div class="pf-card__content">
+									<h1 class="pf-card__title">
+										Fashion Landing page
+									</h1>
+									<a href="#" class="pf-card__link"
+										>View Details</a
+									>
+								</div>
+							</article>
+							<article class="portfolio__item pf-card">
+								<div class="pf-card__image-box">
+									<img
+										src="images/portfolio/item2.jpg "
+										alt=""
+										class="pf-card__image"
+									/>
+								</div>
+								<div class="pf-card__content">
+									<h1 class="pf-card__title">
+										Health & Fitness
+									</h1>
+									<a href="#" class="pf-card__link"
+										>View Details</a
+									>
+								</div>
+							</article>
+							<article class="portfolio__item pf-card">
+								<div class="pf-card__image-box">
+									<img
+										src="images/portfolio/item3.jpg "
+										alt=""
+										class="pf-card__image"
+									/>
+								</div>
+								<div class="pf-card__content">
+									<h1 class="pf-card__title">
+										Furniture Shop
+									</h1>
+									<a href="#" class="pf-card__link"
+										>View Details</a
+									>
+								</div>
+							</article>
+							<article class="portfolio__item pf-card">
+								<div class="pf-card__image-box">
+									<img
+										src="images/portfolio/item4.jpg "
+										alt=""
+										class="pf-card__image"
+									/>
+								</div>
+								<div class="pf-card__content">
+									<h1 class="pf-card__title">
+										IT Solution Provider
+									</h1>
+									<a href="#" class="pf-card__link"
+										>View Details</a
+									>
+								</div>
+							</article>
+						</div>
+						<div class="section-footer">
+							<a href="#" class="green-button">all projects</a>
+						</div>
+					</div>
+				</section>
+				<section class="testimonials">
+					<div class="testimonials__container container">
+						<div class="section-header">
+							<p class="section-header__subtitle">Testimonials</p>
+							<h1 class="section-header__title">
+								What Customers Say
+							</h1>
+						</div>
+						<div class="testimonials__content tst-content">
+							<div class="tst-content__box-wrapper">
+								<div class="tst-content__box"></div>
+							</div>
+							<div
+								class="
+									tst-content__slider
+									tst-slider tst-slider-1
+								"
+							>
+								<div class="swiper-wrapper">
+									<article
+										class="swiper-slide tst-slider__card"
+									>
+										<h3 class="tst-slider__company">
+											Superb Work!
+										</h3>
+										<p class="tst-slider__text">
+											“Blessing welcomed ladyship she met
+											humoured sir breeding her. Six
+											curiosity day assurance bed
+											necessary.”
+										</p>
+										<div class="tst-slider__rating">
+											<i
+												class="
+													tst-slider__star
+													tst-slider__star-active
+													fa fa-star
+												"
+												aria-hidden="true"
+											></i>
+											<i
+												class="
+													tst-slider__star
+													tst-slider__star-active
+													fa fa-star
+												"
+												aria-hidden="true"
+											></i>
+											<i
+												class="
+													tst-slider__star
+													tst-slider__star-active
+													fa fa-star
+												"
+												aria-hidden="true"
+											></i>
+											<i
+												class="
+													tst-slider__star
+													tst-slider__star-active
+													fa fa-star
+												"
+												aria-hidden="true"
+											></i>
+											<i
+												class="
+													tst-slider__star
+													fa fa-star
+												"
+												aria-hidden="true"
+											></i>
+										</div>
+										<div class="tst-slider__company">
+											Sabo Masties
+										</div>
+									</article>
+									<article
+										class="swiper-slide tst-slider__card"
+									>
+										<h3 class="tst-slider__company">
+											Superb Work!
+										</h3>
+										<p class="tst-slider__text">
+											“Blessing welcomed ladyship she met
+											humoured sir breeding her. Six
+											curiosity day assurance bed
+											necessary.”
+										</p>
+										<div class="tst-slider__rating">
+											<i
+												class="
+													tst-slider__star
+													tst-slider__star-active
+													fa fa-star
+												"
+												aria-hidden="true"
+											></i>
+											<i
+												class="
+													tst-slider__star
+													tst-slider__star-active
+													fa fa-star
+												"
+												aria-hidden="true"
+											></i>
+											<i
+												class="
+													tst-slider__star
+													tst-slider__star-active
+													fa fa-star
+												"
+												aria-hidden="true"
+											></i>
+											<i
+												class="
+													tst-slider__star
+													tst-slider__star-active
+													fa fa-star
+												"
+												aria-hidden="true"
+											></i>
+											<i
+												class="
+													tst-slider__star
+													fa fa-star
+												"
+												aria-hidden="true"
+											></i>
+										</div>
+										<div class="tst-slider__company">
+											Sabo Masties
+										</div>
+									</article>
+									<article
+										class="swiper-slide tst-slider__card"
+									>
+										<h3 class="tst-slider__company">
+											Superb Work!
+										</h3>
+										<p class="tst-slider__text">
+											“Blessing welcomed ladyship she met
+											humoured sir breeding her. Six
+											curiosity day assurance bed
+											necessary.”
+										</p>
+										<div class="tst-slider__rating">
+											<i
+												class="
+													tst-slider__star
+													tst-slider__star-active
+													fa fa-star
+												"
+												aria-hidden="true"
+											></i>
+											<i
+												class="
+													tst-slider__star
+													tst-slider__star-active
+													fa fa-star
+												"
+												aria-hidden="true"
+											></i>
+											<i
+												class="
+													tst-slider__star
+													tst-slider__star-active
+													fa fa-star
+												"
+												aria-hidden="true"
+											></i>
+											<i
+												class="
+													tst-slider__star
+													tst-slider__star-active
+													fa fa-star
+												"
+												aria-hidden="true"
+											></i>
+											<i
+												class="
+													tst-slider__star
+													fa fa-star
+												"
+												aria-hidden="true"
+											></i>
+										</div>
+										<div class="tst-slider__company">
+											Sabo Masties
+										</div>
+									</article>
+									<article
+										class="swiper-slide tst-slider__card"
+									>
+										<h3 class="tst-slider__company">
+											Superb Work!
+										</h3>
+										<p class="tst-slider__text">
+											“Blessing welcomed ladyship she met
+											humoured sir breeding her. Six
+											curiosity day assurance bed
+											necessary.”
+										</p>
+										<div class="tst-slider__rating">
+											<i
+												class="
+													tst-slider__star
+													tst-slider__star-active
+													fa fa-star
+												"
+												aria-hidden="true"
+											></i>
+											<i
+												class="
+													tst-slider__star
+													tst-slider__star-active
+													fa fa-star
+												"
+												aria-hidden="true"
+											></i>
+											<i
+												class="
+													tst-slider__star
+													tst-slider__star-active
+													fa fa-star
+												"
+												aria-hidden="true"
+											></i>
+											<i
+												class="
+													tst-slider__star
+													tst-slider__star-active
+													fa fa-star
+												"
+												aria-hidden="true"
+											></i>
+											<i
+												class="
+													tst-slider__star
+													fa fa-star
+												"
+												aria-hidden="true"
+											></i>
+										</div>
+										<div class="tst-slider__company">
+											Sabo Masties
+										</div>
+									</article>
+									<article
+										class="swiper-slide tst-slider__card"
+									>
+										<h3 class="tst-slider__company">
+											Superb Work!
+										</h3>
+										<p class="tst-slider__text">
+											“Blessing welcomed ladyship she met
+											humoured sir breeding her. Six
+											curiosity day assurance bed
+											necessary.”
+										</p>
+										<div class="tst-slider__rating">
+											<i
+												class="
+													tst-slider__star
+													tst-slider__star-active
+													fa fa-star
+												"
+												aria-hidden="true"
+											></i>
+											<i
+												class="
+													tst-slider__star
+													tst-slider__star-active
+													fa fa-star
+												"
+												aria-hidden="true"
+											></i>
+											<i
+												class="
+													tst-slider__star
+													tst-slider__star-active
+													fa fa-star
+												"
+												aria-hidden="true"
+											></i>
+											<i
+												class="
+													tst-slider__star
+													tst-slider__star-active
+													fa fa-star
+												"
+												aria-hidden="true"
+											></i>
+											<i
+												class="
+													tst-slider__star
+													fa fa-star
+												"
+												aria-hidden="true"
+											></i>
+										</div>
+										<div class="tst-slider__company">
+											Sabo Masties
+										</div>
+									</article>
+									<article
+										class="swiper-slide tst-slider__card"
+									>
+										<h3 class="tst-slider__company">
+											Superb Work!
+										</h3>
+										<p class="tst-slider__text">
+											“Blessing welcomed ladyship she met
+											humoured sir breeding her. Six
+											curiosity day assurance bed
+											necessary.”
+										</p>
+										<div class="tst-slider__rating">
+											<i
+												class="
+													tst-slider__star
+													tst-slider__star-active
+													fa fa-star
+												"
+												aria-hidden="true"
+											></i>
+											<i
+												class="
+													tst-slider__star
+													tst-slider__star-active
+													fa fa-star
+												"
+												aria-hidden="true"
+											></i>
+											<i
+												class="
+													tst-slider__star
+													tst-slider__star-active
+													fa fa-star
+												"
+												aria-hidden="true"
+											></i>
+											<i
+												class="
+													tst-slider__star
+													tst-slider__star-active
+													fa fa-star
+												"
+												aria-hidden="true"
+											></i>
+											<i
+												class="
+													tst-slider__star
+													fa fa-star
+												"
+												aria-hidden="true"
+											></i>
+										</div>
+										<div class="tst-slider__company">
+											Sabo Masties
+										</div>
+									</article>
+								</div>
+								<div class="tst-slider__navigation-wrapper">
+									<div class="tst-slider__navigation">
+										<div class="tst-slider__button tst-slider__button-prev">
+											<i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+										</div>
+										<div class="tst-slider__button tst-slider__button-next">
+											<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -326,34 +707,24 @@
 					<div class="footer__block">
 						<div class="footer__logo">Web.Dev</div>
 						<div class="footer__text footer__text-left">
-							You’ll find your next home loan valu
-							you prefer.
+							You’ll find your next home loan valu you prefer.
 						</div>
 						<div class="footer__social social-media">
 							<div class="social-media__item">
 								<i
-									class="
-										social-media__icon
-										fa fa-facebook
-									"
+									class="social-media__icon fa fa-facebook"
 									aria-hidden="true"
 								></i>
 							</div>
 							<div class="social-media__item">
 								<i
-									class="
-										social-media__icon
-										fa fa-twitter
-									"
+									class="social-media__icon fa fa-twitter"
 									aria-hidden="true"
 								></i>
 							</div>
 							<div class="social-media__item">
 								<i
-									class="
-										social-media__icon
-										fa fa-linkedin
-									"
+									class="social-media__icon fa fa-linkedin"
 									aria-hidden="true"
 								></i>
 							</div>
@@ -361,96 +732,63 @@
 					</div>
 					<nav class="footer__nav navbar">
 						<div class="footer__col">
-							<div class="navbar__title">
-								Resources
-							</div>
+							<div class="navbar__title">Resources</div>
 							<ul class="navbar__list">
 								<li class="navbar__item">
-									<a
-										href="#"
-										class="navbar__link"
+									<a href="#" class="navbar__link"
 										>Our Agents</a
 									>
 								</li>
 								<li class="navbar__item">
-									<a
-										href="#"
-										class="navbar__link"
+									<a href="#" class="navbar__link"
 										>Member Stories</a
 									>
 								</li>
 								<li class="navbar__item">
-									<a
-										href="#"
-										class="navbar__link"
-										>Video</a
-									>
+									<a href="#" class="navbar__link">Video</a>
 								</li>
 								<li class="navbar__item">
-									<a
-										href="#"
-										class="navbar__link"
+									<a href="#" class="navbar__link"
 										>Free trial</a
 									>
 								</li>
 							</ul>
 						</div>
 						<div class="footer__col">
-							<div class="navbar__title">
-								Company
-							</div>
+							<div class="navbar__title">Company</div>
 							<ul class="navbar__list">
 								<li class="navbar__item">
-									<a
-										href="#"
-										class="navbar__link"
+									<a href="#" class="navbar__link"
 										>Patnerships</a
 									>
 								</li>
 								<li class="navbar__item">
-									<a
-										href="#"
-										class="navbar__link"
+									<a href="#" class="navbar__link"
 										>Terms of use</a
 									>
 								</li>
 								<li class="navbar__item">
-									<a
-										href="#"
-										class="navbar__link"
-										>Privacy</a
-									>
+									<a href="#" class="navbar__link">Privacy</a>
 								</li>
 								<li class="navbar__item">
-									<a
-										href="#"
-										class="navbar__link"
-										>Sitemap</a
-									>
+									<a href="#" class="navbar__link">Sitemap</a>
 								</li>
 							</ul>
 						</div>
 						<div class="footer__col footer__col-mw">
-							<div class="navbar__title">
-								Get in touch
-							</div>
+							<div class="navbar__title">Get in touch</div>
 							<ul class="navbar__list">
 								<li class="navbar__item">
-									<form
-										class="footer__form"
-									>
+									<form class="footer__form">
 										<input
-											class="
-												footer__input
-											"
+											class="footer__input"
 											type="email"
 											placeholder="Enter your email"
 										/>
 										<div
 											class="
 												footer__icon
-												fa
-												fa-arrow-circle-right
+												fa fa-arrow-circle-right
 											"
 										></div>
 									</form>
@@ -467,6 +805,6 @@
 			</div>
 		</footer>
 		<script defer src="scripts/live.js"></script>
-		<script defer src="scripts/script.js"></script>
+		<script defer type="module" src="scripts/script.js"></script>
 	</body>
 </html>

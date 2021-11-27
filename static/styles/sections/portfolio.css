@@ -1,0 +1,37 @@
+
+.portfolio__content{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+}
+.portfolio__item{
+      margin:25px;
+}
+.portfolio__item:nth-child(2n){
+      margin:80px 25px 25px 25px;
+}
+.pf-card__image{
+      max-width: 100%;
+      object-fit: cover;
+}
+.pf-card__content{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding:25px;
+}
+.pf-card__title{
+      font-size:1.5rem;
+      line-height: 1.7rem;
+      color:#000;
+      /* padding:10px 0; */
+}
+.pf-card__link{
+      line-height:1.16rem;
+      color:var(--green);
+      text-decoration: none;
+      margin-top:10px;
+}
+
+
