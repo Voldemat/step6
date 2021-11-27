@@ -1,0 +1,16 @@
+.contact-us__container{
+      /* width:50%; */
+      max-width:700px;
+      /* padding:0 136px; */
+}
+.contact-us__title{
+      font-size:clamp(1rem, 10vw,2.5rem);
+      max-width:500px;
+      margin-right:auto;
+      margin-left:auto;
+}
+@media screen and (min-width:720px){
+      .contact-us__container{
+            padding:0 136px;
+      }
+}

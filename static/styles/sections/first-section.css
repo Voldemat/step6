@@ -1,5 +1,5 @@
 .first-section{
-	overflow-x: hidden;
+	overflow: hidden;
 	background-color: #F2F2F2;
 	margin-top: 0;
 }
@@ -79,6 +79,9 @@
 
 .first-section__button {
 	margin: 5px 20px;
+	font-size: clamp(0.8rem, 1.5vw, 1rem);
+	padding: clamp(10px, 1.4vw, 18px) clamp(30px, 6.5vw, 60px);
+
 }
 .first-section__link {
 	margin: 5px 20px;
