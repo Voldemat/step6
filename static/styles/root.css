@@ -46,6 +46,12 @@ section{
 		0px 8.14815px 6.51852px rgba(49, 49, 49, 0.0392593),
 		0px 1.85185px 3.14815px rgba(49, 49, 49, 0.0240741);
 }
+.green-button_white{
+      background-color: #fff;
+      color:#514040;
+      border:1px solid #514040;
+      box-shadow: none;
+}
 .section-header{
       text-align: center;
 }

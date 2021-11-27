@@ -12,6 +12,7 @@
 .footer__license {
 	padding: clamp(20px, 4vw, 40px);
 	width: 100%;
+	border-top:1px solid #EDEDED;
 }
 .footer__text {
 	text-align: center;
